@@ -1,22 +1,22 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: Heliang Blog
+SEOTitle: 贺亮的博客 | Heliang Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "https://huangxuan.me"              # your host, for absolute URL
+email: tonyhe1028@gmail.com
+description: "关于程序员 | 贺亮 & Mobile Lover，Software Engineer | 这里是 @heliang贺亮 的个人博客，与你一起发现更大的世界。"
+keyword: "贺亮, Tonyhe贺亮, Tonyhe,@heliang, 贺亮的博客, Heliang Blog, 博客, 个人网站, 互联网,"
+url: "https://Tonyhe666.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-twitter_username:   huxpro
-#facebook_username:  huxpro
+weibo_username:     1834917485
+zhihu_username:     tony-46-99
+github_username:    Tonyhe666
+twitter_username:   heliang19
+#facebook_username:  heliang
 # linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -26,7 +26,7 @@ twitter_username:   huxpro
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
@@ -67,7 +67,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
+sidebar-about-description: "写写代码，旅旅游，谈谈恋爱，玩玩技术，<br>离开世界之前，一切都是过程"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
