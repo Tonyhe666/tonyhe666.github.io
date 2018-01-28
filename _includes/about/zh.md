@@ -3,10 +3,12 @@
 
 Hey，我是贺亮。
 
-职业是软件工程师，曾任职于Qvod，Elex，Nuagetimes, Rafotech。现就职于NashMobile。
+职业是软件工程师，曾任职于Qvod，[Elex][1]，[Nuagetimes][2], Rafotech。现就职于NashMobile。
 
-一些作品和开源软件项目，👉 戳 [Github](http://github.com/Tonyhe666)
-
-
+一些作品和开源软件项目，👉 戳 [Github][3]
 
 
+
+[1]:"https://elexgame.com/" "智明星通"
+[2]:"http://nuagetimes.com/" "彩云时代"
+[3]:"http://github.com/Tonyhe666" "Github"

@@ -1,10 +1,10 @@
 # Site settings
-title: Heliang Blog
-SEOTitle: 贺亮的博客 | Heliang Blog
+title: 向来心是看客心
+SEOTitle: 贺亮的博客 | Heliang's Blog
 header-img: img/home-bg.jpg
 email: tonyhe1028@gmail.com
 description: "关于程序员 | 贺亮 & Mobile Lover，Software Engineer | 这里是 @heliang贺亮 的个人博客，与你一起发现更大的世界。"
-keyword: "贺亮, Tonyhe贺亮, Tonyhe,@heliang, 贺亮的博客, Heliang Blog, 博客, 个人网站, 互联网,"
+keyword: "贺亮,Tonyhe,@heliang,贺亮的博客,Heliang Blog, 博客, 个人网站, 互联网,"
 url: "https://Tonyhe666.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -67,7 +67,7 @@ ga_domain: tonyhe666.github.io
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，旅旅游，谈谈恋爱，玩玩技术，<br>离开世界之前，一切都是过程"
+sidebar-about-description: "写写代码，旅旅游，谈谈恋爱。<br>离开世界之前，一切都是过程"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -92,32 +92,33 @@ friends: [
     # },{
         title: "乱序",
         href: "http://mida.re/"
-    },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "前端神盾局",
-        href: "http://wepiaofei.github.io/blog/"
     }
+    #,{
+    #     title: "前端外刊评论",
+    #     href: "http://qianduan.guru/"
+    # },{
+    #     title: "天镶的博客",
+    #     href: "http://lingyu.wang/"
+    # },{
+    #     title: "Luke 的自留地",
+    #     href: "http://hmqk1995.github.io"
+    # },{
+    #     title: "Ebn's Blog",
+    #     href: "http://ebnbin.com/"
+    # },{
+    #     title: "SmdCn's Blog",
+    #     href: "http://blog.smdcn.net"
+    # },{
+    #     title: "解旻的博客",
+    #     href: "http://xieminis.me/"
+    # },{
+    #     title: "DHong Say",
+    #     href: "http://dhong.co"
+    # },{
+    #     title: "尹峰以为",
+    #     href: "http://ingf.github.io/"
+    # },{
+    #     title: "前端神盾局",
+    #     href: "http://wepiaofei.github.io/blog/"
+    # }
 ]
