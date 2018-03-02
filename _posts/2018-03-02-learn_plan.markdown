@@ -16,15 +16,15 @@ tags:
 
 
 ##  学习
-- 学习[Python]('https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000')
+- 学习[Python](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000)
 
-- 学习[javaScript]('https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000')
+- 学习[javaScript](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000)
 
-以上学习目标，充分利用晚上下班和周末时候。Python还是以学习爬虫为主，框架化，多线程，数据本地序列化。js暂时还没想到怎么用，先学一下基础。等学习HTML5后在准备进阶
+以上学习目标，充分利用晚上下班和周末时候。Python的学习动力来自知乎话题[你都用 Python 来做什么？](https://www.zhihu.com/question/20799742/answer/329495605) 我自己还是以学习爬虫为主，框架化，多线程，数据本地序列化（MySql）。js暂时还没想到怎么用，先学一下基础。等学习HTML5后,或者cocos creater后在准备进阶
 
 
 ##  跑步
-开始跑步吧！主要要求在于==坚持==。写代码这几年感觉身体体能下降严重，明显的感觉精力不足。每周至少跑一次10公里，闲暇时候5公里。
+开始跑步吧！主要要求在于坚持。写代码这几年感觉身体体能下降严重，明显的感觉精力不足。每周至少跑一次10公里，闲暇时候5公里。
 
 
 ##  生活
