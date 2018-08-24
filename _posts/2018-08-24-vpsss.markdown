@@ -1,0 +1,91 @@
+---
+layout:     post
+title:      "SS安装教程"
+subtitle:   " \"vps ss Client\""
+date:       2018-08-24 
+author:     "heliang"
+header-img: "img/contact-bg.jpg"
+catalog: true
+tags:
+    - ss
+---
+
+#ss vps安装已经iOS客户端推荐
+
+本教程用于自我学习的心得笔记，用于记录一些容易忘记的东西。
+
+### 一、购买vps
+
+我买的 [Vultr]('https://www.vultr.com/?ref=7316634') 5美刀一个月的机器，日本节点，最便宜的是一个月2.5美刀只提供一个ipv6地址，支付宝 paypal都可以支付，购买还是很方便的。如果你通过下面链接注册账户，我可以获得额外的奖励费用，我将非常感谢您。
+
+<a href="https://www.vultr.com/?ref=7316634"><img src="https://www.vultr.com/media/banner_3.png" width="300" height="250"></a>
+
+### 二、安装ss
+- 安装环境CentOS 7 x64
+- 安装脚本
+
+```
+wget --no-check-certificate https://raw.githubusercontent.com/Tonyhe666/iOS-Scripting/master/ss/ss.sh
+chmod +x ss.sh
+./ss.sh 2>&1 | tee shadowsocks.log
+```
+- 配置文件路径 /etc/shadowsocks.json
+- 单用户配置文件格式
+
+```
+{
+"server":"0.0.0.0",
+"server_port":8989,
+"local_address":"127.0.0.1",
+"local_port":1080,
+"password":"yourpassword",
+"timeout":300,
+"method":"aes-256-cfb",
+"fast_open": false
+}
+```
+
+- 多用户多端口配置文件格式
+
+```
+{
+"server":"0.0.0.0",
+"local_address":"127.0.0.1",
+"local_port":1080,
+"port_password":{
+"8989":"password0",
+"9001":"password1",
+"9002":"password2",
+"9003":"password3",
+"9004":"password4"
+},
+"timeout":300,
+"method":"aes-256-cfb",
+"fast_open": false
+}
+```
+
+### 三、使用bbr加速
+
+请搜索bbr相关教程，安装脚本涉及到CentOs的内核版本号。
+
+```
+wget --no-check-certificate https://raw.githubusercontent.com/Tonyhe666/iOS-Scripting/master/ss/bbr.sh
+chmod +x bbr.sh
+./bbr.sh
+```
+
+### 四、客户端
+
+[Github](https://github.com/shadowsocks)已经提供好了Windows, Android, Mac客户端, 可以随时下载.
+
+关于iOS客户端我使用的是Potatso lite版本，是个免费的版本，由于众所周知的原因中国AppStore商店不再提供。Potatso 2是个收费版本,同样也不再国内提供，需要外区的AppStore ID 去下载获取。欢迎支持作者[@icodesign]('https://github.com/icodesign')
+
+
+
+
+
+
+
+
+
