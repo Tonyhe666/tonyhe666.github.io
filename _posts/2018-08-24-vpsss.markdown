@@ -82,8 +82,23 @@ chmod +x bbr.sh
 关于iOS客户端我使用的是Potatso lite版本，是个免费的版本，由于众所周知的原因中国AppStore商店不再提供。Potatso 2是个收费版本,同样也不再国内提供，需要外区的AppStore ID 去下载获取。欢迎支持作者[@icodesign]('https://github.com/icodesign')
 
 
+### 五、配置开机启动
 
+```
+nohup /usr/bin/ssserver -c /etc/shadowsocks.json >> /tmp/ssserver.log &
+```
+- 自己新建一个shell脚本startss.sh，并添加可执行权限
+```
+chmod +x /root/startss.sh
+```
+- 添加/root/startss.sh到开机启动,并添加可执行权限
+```
+vi /etc/rc.d/rc.local
+```
 
+```
+chmod +x /etc/rc.d/rc.local
+```
 
 
 
