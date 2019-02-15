@@ -78,7 +78,7 @@ make && make install
 插件选项填写obfs=http， 如果服务器配置的是obfs=tls依据服务器配置
 
 插件参数：obfs-host=www.bing.com
-![img](../img/post-img-macss.png)
+![img](/img/post-img-macss.png)
 
 
 
