@@ -14,13 +14,7 @@ tags:
 
 本教程用于自我学习的心得笔记，用于记录一些容易忘记的东西。
 
-### 一、购买vps
-
-我买的 [Vultr]('https://www.vultr.com/?ref=7316634') 5美刀一个月的机器，日本节点，最便宜的是一个月2.5美刀只提供一个ipv6地址，支付宝 paypal都可以支付，购买还是很方便的。如果你通过下面链接注册账户，我可以获得额外的奖励费用，我将非常感谢您。
-
-<a href="https://www.vultr.com/?ref=7316634"><img src="https://www.vultr.com/media/banner_3.png" width="300" height="250"></a>
-
-### 二、安装ss
+### 一、安装ss
 - 安装环境CentOS 7 x64
 - 安装脚本
 
@@ -73,11 +67,8 @@ make && make install
 
 
 ### 三、MAC客户端使用方法
-插件填写obfs-local
-
-插件选项填写obfs=http， 如果服务器配置的是obfs=tls依据服务器配置
-
-插件参数：obfs-host=www.bing.com
+插件：obfs-local
+插件选项：obfs=http;obfs-host=www.bing.com
 ![img](/img/post-img-macss.png)
 
 
