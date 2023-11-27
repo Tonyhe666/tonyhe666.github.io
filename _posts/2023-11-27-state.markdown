@@ -12,7 +12,7 @@ tags      :
 
 SwiftUI的状态管理
 
-# @State
+#@State
 
 可读可写（存储属性）的一个属性包装器类型。由swiftUI管理使用状态作为存储在视图层次结构中的给定值类型的单一事实来源。将状态声明为*私有*，以防止在成员初始化程序中设置它，这可能与 SwiftUI 提供的存储管理冲突。
 
@@ -39,7 +39,7 @@ SwiftUI的状态管理
 # @Observale @Bindable（iOS17）
 带来了一下好处
 - ObservableObject 不能追踪对象可选性，和对象集合
-- 使用已经存在的State 和Environment， 而不是StateObject和EnvironObject
+- 使用State 和Environment， 而不是StateObject和EnvironmentObject
 - 更新视图是基于body读取的可观察属性变化，而不是可观察对象的属性发生变化。
   通俗一点的说法就是，可观察属性如果变化了。但是body中没有使用这个可观察属性，那么body将不会重绘。这样就优化了程序了的性能。 之前的ObservalObject只要可观察属性发生变化，body都会重新绘制。 所以苹果建议：在iOS17以后，使用Observable()宏来代替ObservableObject
 
