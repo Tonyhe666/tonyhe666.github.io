@@ -1,16 +1,16 @@
 ---
 layout    : post
-title     : "SwiftUI"
+title     : "SwiftUI-状态管理"
 subtitle  : " \"swiftUI的状态管理\""
 date      : 2023-11-27
 author    : "heliang"
 header-img: "img/contact-bg.jpg"
 catalog   : true
-tags      : 
+tags      :  
     - swiftUI
 ---
 
-swiftUI的状态管理
+SwiftUI的状态管理
 
 # @State
 
