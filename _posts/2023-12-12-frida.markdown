@@ -1,0 +1,75 @@
+---
+layout    : post
+title     : "记录一下iOS逆向流程"
+subtitle  : " \"Palera1n、Frida\""
+date      : 2023-12-12
+author    : "heliang"
+header-img: "img/contact-bg.jpg"
+catalog   : true
+tags      :  
+    - iOS 逆向
+---
+
+iOS 逆向
+
+# 背景
+
+一直以来以来想参考别人的app 怎么实现那个功能，或者使用了那些三方库。而没有好的方法。这里记录一下越狱流程和逆向过程，便于以后使用
+
+# 越狱
+
+越狱了一台iPhoneX iOS版本：iOS 16.6.1
+
+工具：使用了Palera1n工具
+
+越狱过程不再赘述，说一下遇到的问题 [参考教程]('https://dkxuanye.cn/?p=6813')
+
+- Booting PongoOS... 卡住
+
+解决方法：拔了数据项，重新插上，再次运行越狱工具。
+
+- root 用户权限拒绝登录不上问题
+  
+解决方法：使用mobile用户登录
+
+# 砸壳
+
+使用了[frida-ios-dump]('https://github.com/AloneMonkey/frida-ios-dump')
+下载完成后安装
+```
+pip3 install -r requirements.txt
+```
+
+修改 dump.py，使用自己手机配置
+```
+User     = 'mobile' // 用户名
+Password = '123456' // 密码
+Host     = '192.168.1.78' // 手机ip
+Port     = 2222
+```
+
+流程：
+- 手机端安装Frida [软件源]('https://repo.chariz.com')
+- 手机端运行
+```/usr/sbin/frida-server & ```
+
+- 电脑端使用,注意手机要插上电脑，第一次就是电脑没插手机，失败。
+  ```
+  python3 dump.py -h
+  ```
+- 查看手机进程, 查看app名字
+  ```
+  frida-ps -U
+  ```
+  或者使用 -l参数 查看app名字和Identifier
+  ```
+  python3 dump.py -l
+  ```
+- 开始砸壳
+  ```
+  python3 dump.py app名字
+  ```
+
+目录下会生成 app名字.ipa
+
+砸壳完成！！！！！
