@@ -43,7 +43,39 @@ SwiftUI的状态管理
 - 更新视图是基于body读取的可观察属性变化，而不是可观察对象的属性发生变化。
   通俗一点的说法就是，可观察属性如果变化了。但是body中没有使用这个可观察属性，那么body将不会重绘。这样就优化了程序了的性能。 之前的ObservalObject只要可观察属性发生变化，body都会重新绘制。 所以苹果建议：在iOS17以后，使用Observable()宏来代替ObservableObject
 
+* 核心理解： 当body中访问了可观察对象属性，view就会和可观察对象属性建立了依赖关系，当属性发生变化时候，body就会重新绘制。如果，没有读取任何可观察对象的属性，那么就不会形成依赖关系，这时候属性发生变化时候，body不会重新绘制。
+* 即使视图没有存储可观察类型，也可以追踪，比如全局属性、或者单例 
+* Observation支持追踪计算属性
+* 当view和一组可观察对象形成依赖（访问了可观察对象属性）， view会追踪集合的改变例如，插入，删除，移动，替换等。swiftUI会更新view
 
+```
+struct LibraryView: View {
+    @State private var books = [Book(), Book(), Book()]
+
+
+    var body: some View {
+        List(books) { book in 
+            Text(book.title)
+        }
+    }
+}
+```
+有一个特殊情况： LibraryView中含有List，List读取了可观察属性title， LibraryView没有直接访问可观察对象属性。这时候属性title发生变化，LibraryView是不更新的，仅仅是List里面的读取了可观察对象的Text会直接更新。
+
+为什么呢？
+
+因为LibraryView存储了List 的内容闭包， 当子项Text出现在屏幕上时候，它才会被swiftUI创建出来，这意味着，LibraryView没有读取可观察属性title，所以没有形成依赖关系。
+
+* 参数传递
+  当可观察对象当作参数传递时候，只要参数接收的view没有访问可观察属性，就不会形成依赖关系。当可观察对象属性发生变化时，也就不会刷新。
+  如果view没有任何依赖关系，当数据改变时候，swiftUI不会更新视图。所以可观察对象属性，可以多层次传递。而不会造成性能问题。
+
+* view 存储了一个可观察对象的引用，如果引用发生变化，视图会被更新。这是因为，引用是view值的一部分，不是因为。这个应用是可观察的。
+
+* @Bindable 一般用于可观察对象属性与控件绑定，比如textField, Toggle 等等
+  
+
+  可以看出来，iOS17 苹果对可观察对象，做了很大的改动，解决了很多@ObservedObject的不足，刷新频繁等性能问题。基本上iOS17以后，@ObservedObject被大大的削弱了，主力推荐使用 @Observale宏了。
 ```
 // BEFORE
 import SwiftUI
