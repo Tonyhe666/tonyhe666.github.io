@@ -22,3 +22,12 @@ tags      :
  
 
 升级需要立即支付新物品的全款，原物品根据使用时间按比例进行退款。新物品的支付时间，即老物品的退款时间。
+
+
+Upgrade. Someone purchases a subscription that offers a higher level of service than their current subscription. They’re immediately upgraded and receive a refund of the prorated amount of their original subscription. If you’d like people to immediately access more content or features, rank the subscription higher to make it an upgrade.
+
+Downgrade. Someone selects a subscription that offers a lower level of service than their current subscription. The subscription continues until the next renewal date, then is renewed at the lower level and price.
+
+Crossgrade. Someone switches to a new subscription of the equivalent level. If the subscriptions are the same duration, the new subscription begins immediately. If the durations are different, the new subscription goes into effect at the next renewal date.
+
+[参考链接]("https://developer.apple.com/app-store/subscriptions/")
